@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
+body {
+    background-color: rgb(53, 51, 51);
+}
+
 /* 1. Global Elements */
 h1 {
   font-family: 'Permanent Marker', cursive; /* Fun, playful font for the title */
