@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
 /* 1. Global Elements */
 h1 {
   color: #00ff66;
   text-align: center;
   margin-top: 20px;     /* Subtle, clean spacing from the absolute top of the page */
   margin-bottom: 15px;  /* Even spacing between the title and the navbar below it */
+  font-family: 'Permanent Marker', cursive; /* Fun, playful font for the title */
 }
 
 #header {
@@ -28,6 +31,7 @@ h1 {
 .navbar .nav-link.active,
 .navbar .dropdown-toggle {
   color: #00ff66 !important; 
+  font-family: 'Permanent Marker', cursive !important; /* Consistent playful font for navbar items */
 }
 
 /* 4. Navbar Brand & Links (Hover State) */
