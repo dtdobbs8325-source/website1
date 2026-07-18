@@ -2,18 +2,18 @@
 
 /* 1. Global Elements */
 h1 {
+  font-family: 'Permanent Marker', cursive; /* Fun, playful font for the title */
   color: #00ff66;
   text-align: center;
   margin-top: 20px;     /* Subtle, clean spacing from the absolute top of the page */
   margin-bottom: 15px;  /* Even spacing between the title and the navbar below it */
-  font-family: 'Permanent Marker', cursive; /* Fun, playful font for the title */
 }
 
 #header {
   background-color: black;
   color: #00ff66;
   padding-top: 0;       /* Keep the container ceiling tight */
-  padding-bottom: 1em; 
+  padding-bottom: 1em;
   text-align: center;
 }
 
@@ -30,8 +30,8 @@ h1 {
 .navbar .nav-link, 
 .navbar .nav-link.active,
 .navbar .dropdown-toggle {
-  color: #00ff66 !important; 
   font-family: 'Permanent Marker', cursive !important; /* Consistent playful font for navbar items */
+  color: #00ff66 !important; 
 }
 
 /* 4. Navbar Brand & Links (Hover State) */
@@ -56,13 +56,13 @@ h1 {
 
 /* 6. Top-Right Header Login Link */
 .header-login-link {
-  color: #00ff66 !important; /* Matches your navbar electric green perfectly */
-  text-decoration: none;     /* Removes the default underline */
+  color: #00ff66 !important;  /* Matches your navbar electric green perfectly */
+  text-decoration: none;      /* Removes the default underline */
   font-weight: 500;
   transition: color 0.2s ease-in-out;
 }
 
 .header-login-link:hover {
-  color: #66ff99 !important; /* Brightens slightly when hovered */
+  color: #66ff99 !important;  /* Brightens slightly when hovered */
   text-decoration: underline; /* Adds underline back only on hover */
 }
