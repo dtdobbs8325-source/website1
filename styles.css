@@ -1,0 +1,64 @@
+/* 1. Global Elements */
+h1 {
+  color: #00ff66;
+  text-align: center;
+  margin-top: 20px;     /* Subtle, clean spacing from the absolute top of the page */
+  margin-bottom: 15px;  /* Even spacing between the title and the navbar below it */
+}
+
+#header {
+  background-color: black;
+  color: #00ff66;
+  padding-top: 0;       /* Keep the container ceiling tight */
+  padding-bottom: 1em; 
+  text-align: center;
+}
+
+/* 2. Navbar Container Styling */
+.navbar {
+  border-top: 4px solid #00ff66;
+  border-bottom: 4px solid #00ff66;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* 3. Navbar Brand & Links (Normal State) */
+.navbar .navbar-brand,
+.navbar .nav-link, 
+.navbar .nav-link.active,
+.navbar .dropdown-toggle {
+  color: #00ff66 !important; 
+}
+
+/* 4. Navbar Brand & Links (Hover State) */
+.navbar .navbar-brand:hover,
+.navbar .nav-link:hover,
+.navbar .dropdown-toggle:hover {
+  color: #66ff99 !important; 
+}
+
+/* 5. Custom Green Search Button */
+.btn-custom-green {
+  color: #00ff66 !important;
+  border-color: #00ff66 !important;
+  transition: all 0.2s ease-in-out; 
+}
+
+.btn-custom-green:hover {
+  background-color: #00ff66 !important;
+  color: black !important; 
+  border-color: #00ff66 !important;
+}
+
+/* 6. Top-Right Header Login Link */
+.header-login-link {
+  color: #00ff66 !important; /* Matches your navbar electric green perfectly */
+  text-decoration: none;     /* Removes the default underline */
+  font-weight: 500;
+  transition: color 0.2s ease-in-out;
+}
+
+.header-login-link:hover {
+  color: #66ff99 !important; /* Brightens slightly when hovered */
+  text-decoration: underline; /* Adds underline back only on hover */
+}
