@@ -71,3 +71,8 @@ h1 {
   color: #66ff99 !important;  /* Brightens slightly when hovered */
   text-decoration: underline; /* Adds underline back only on hover */
 }
+
+video {
+  border: 2px solid #00ff66; /* Electric green border for videos */
+  margin: 1em;
+}
