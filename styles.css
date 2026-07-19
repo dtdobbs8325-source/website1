@@ -2,51 +2,67 @@
 
 body {
     background-color: rgb(26, 25, 25);
+    background-attachment: fixed; /* Keeps the background color completely locked in place while content scrolls */
     color: green;
 }
 
-/* 1. Global Elements */
+/* 1. Global Elements & Typography */
 h1 {
   font-family: 'Permanent Marker', cursive; /* Fun, playful font for the title */
   color: #00ff66;
   text-align: center;
-  margin-top: 20px;     /* Subtle, clean spacing from the absolute top of the page */
-  margin-bottom: 15px;  /* Even spacing between the title and the navbar below it */
+  margin-top: 15px;     
+  margin-bottom: 15px;  
+}
+
+/* 2. Fixed Layout Structure */
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1030;        /* Ensures header stays safely layered above videos and scrolling items */
 }
 
 #header {
   background-color: black;
   color: #00ff66;
-  padding-top: 0;       /* Keep the container ceiling tight */
-  padding-bottom: 1em;
+  padding-top: 5px;       
+  padding-bottom: 0px;
   text-align: center;
 }
 
-/* 2. Navbar Container Styling */
+/* Pushes the main page content down so it doesn't get covered by the header layer on load */
+.content-wrapper {
+  padding-top: 170px;   /* Adjusted to clear the total height of title + navbar */
+}
+
+/* 3. Navbar Container Styling */
 .navbar {
   border-top: 4px solid #00ff66;
   border-bottom: 4px solid #00ff66;
   padding-top: 10px;
   padding-bottom: 10px;
+  margin-bottom: 0 !important; /* Forces layout flush with the header's container edge */
 }
 
-/* 3. Navbar Brand & Links (Normal State) */
+/* 4. Navbar Brand & Links (Normal State) */
 .navbar .navbar-brand,
 .navbar .nav-link, 
 .navbar .nav-link.active,
 .navbar .dropdown-toggle {
-  font-family: 'Permanent Marker', cursive !important; /* Consistent playful font for navbar items */
+  font-family: 'Permanent Marker', cursive !important; 
   color: #00ff66 !important; 
 }
 
-/* 4. Navbar Brand & Links (Hover State) */
+/* 5. Navbar Brand & Links (Hover State) */
 .navbar .navbar-brand:hover,
 .navbar .nav-link:hover,
 .navbar .dropdown-toggle:hover {
   color: #66ff99 !important; 
 }
 
-/* 5. Custom Green Search Button */
+/* 6. Custom Green Search Button */
 .btn-custom-green {
   color: #00ff66 !important;
   border-color: #00ff66 !important;
@@ -59,19 +75,20 @@ h1 {
   border-color: #00ff66 !important;
 }
 
-/* 6. Top-Right Header Login Link */
+/* 7. Top-Right Header Login Link */
 .header-login-link {
-  color: #00ff66 !important;  /* Matches your navbar electric green perfectly */
-  text-decoration: none;      /* Removes the default underline */
+  color: #00ff66 !important;  
+  text-decoration: none;      
   font-weight: 500;
   transition: color 0.2s ease-in-out;
 }
 
 .header-login-link:hover {
-  color: #66ff99 !important;  /* Brightens slightly when hovered */
-  text-decoration: underline; /* Adds underline back only on hover */
+  color: #66ff99 !important;  
+  text-decoration: underline; 
 }
 
+/* 8. Media Elements */
 video {
   border: 2px solid green; /* Electric green border for videos */
   margin: 1em;

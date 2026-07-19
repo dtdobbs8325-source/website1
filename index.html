@@ -15,14 +15,12 @@
     <style>
         /* Responsive custom adjustments for the big hero image aspect */
         .featured-hero-img {
-            height: 260px;
-            /* Mobile height fallback */
+            height: 260px; /* Mobile height fallback */
         }
 
         @media (min-width: 768px) {
             .featured-hero-img {
-                height: 380px;
-                /* Larger desktop presence */
+                height: 380px; /* Larger desktop presence */
             }
         }
     </style>
@@ -30,8 +28,8 @@
 
 <body>
 
-    <header>
-        <!-- Horizontal flex centering for header content; position-relative maps the top-right login frame -->
+    <header class="fixed-header shadow">
+        <!-- Horizontal flex centering for header content -->
         <div id="header" class="container-fluid d-flex flex-column align-items-center position-relative">
 
             <!-- Top-Right Login Link (Commented Out) -->
@@ -41,10 +39,10 @@
             </div> 
             -->
 
-            <h1 style="text-align: center;">DLif3</h1>
+            <h1>DLif3</h1>
 
             <!-- Navbar styling spanning full width container dimensions -->
-            <nav class="navbar navbar-expand-lg w-100 mb-3" style="background-color: black;" data-bs-theme="dark">
+            <nav class="navbar navbar-expand-lg w-100" style="background-color: black;" data-bs-theme="dark">
                 <div class="container-fluid">
                     <a class="navbar-brand active" aria-current="page" href="index.html">DLif3</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -91,7 +89,9 @@
         </div>
     </header>
 
-    <main>
+    <!-- The content-wrapper pushes content down below the fixed navbar layer -->
+    <main class="content-wrapper">
+        
         <!-- Hero Intro Section -->
         <div id="div-1" class="container fluid py-4">
             <h2 class="text-center fw-bold display-5">Welcome to DLif3!</h2>

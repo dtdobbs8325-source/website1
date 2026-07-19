@@ -12,7 +12,7 @@
   </head>
   <body>
 
-    <header>
+    <header class="fixed-header shadow">
       <!-- Horizontal flex centering for header content; position-relative maps the top-right login frame -->
       <div id="header" class="container-fluid d-flex flex-column align-items-center position-relative">
         
@@ -70,6 +70,13 @@
         </nav>
       </div>
     </header>
+
+    <!-- Wrapped inside main content-wrapper to clear the fixed navbar layer -->
+    <main class="content-wrapper">
+      <div class="container py-4">
+        <!-- Add your contact form, social links, or message detail containers down here -->
+      </div>
+    </main>
 
     <!-- Scripts (Placed at the bottom for performance) -->
     <script src="script.js"></script>

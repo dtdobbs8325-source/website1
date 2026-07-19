@@ -12,7 +12,7 @@
   </head>
   <body>
 
-    <header>
+    <header class="fixed-header shadow">
       <!-- Horizontal flex centering for header content; position-relative maps the top-right login frame -->
       <div id="header" class="container-fluid d-flex flex-column align-items-center position-relative">
         
@@ -37,7 +37,7 @@
                   <a class="nav-link" href="blog.html">Blog</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="audio.html">Audio</a>
+                  <a class="nav-link active" aria-current="page" href="audio.html">Audio</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="video.html">Video</a>
@@ -69,14 +69,18 @@
       </div>
     </header>
 
-    <!-- <div class="container-fluid">
-      <div class="row">
-        <div class="col-12">
-          <h2>Audio Content</h2>
-          <p>Welcome to the Audio section!</p>
+    <!-- Wrapped inside main content-wrapper to clear the fixed navbar layer -->
+    <main class="content-wrapper">
+      <div class="container-fluid py-4">
+        <div class="row">
+          <div class="col-12 text-center text-md-start">
+            <h2 class="fw-bold display-6">Audio Content</h2>
+            <p class="text-secondary fs-5">Welcome to the Audio section!</p>
+            <!-- Your audio tracks, playlists, or player components can be placed down here -->
+          </div>
         </div>
       </div>
-    </div> -->
+    </main>
 
     <!-- Custom Scripts -->
     <script src="script.js"></script>
