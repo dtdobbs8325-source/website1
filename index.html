@@ -11,6 +11,21 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* Responsive custom adjustments for the big hero image aspect */
+        .featured-hero-img {
+            height: 260px;
+            /* Mobile height fallback */
+        }
+
+        @media (min-width: 768px) {
+            .featured-hero-img {
+                height: 380px;
+                /* Larger desktop presence */
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -21,15 +36,15 @@
 
             <!-- Top-Right Login Link (Commented Out) -->
             <!-- 
-        <div class="position-absolute top-0 end-0 mt-3 me-3">
-          <a href="login.html" class="header-login-link">Login</a>
-        </div> 
-        -->
+            <div class="position-absolute top-0 end-0 mt-3 me-3">
+              <a href="login.html" class="header-login-link">Login</a>
+            </div> 
+            -->
 
-            <h1 class="w-100">DLif3</h1>
+            <h1 style="text-align: center;">DLif3</h1>
 
             <!-- Navbar styling spanning full width container dimensions -->
-            <nav class="navbar navbar-expand-lg w-100" style="background-color: black;" data-bs-theme="dark">
+            <nav class="navbar navbar-expand-lg w-100 mb-3" style="background-color: black;" data-bs-theme="dark">
                 <div class="container-fluid">
                     <a class="navbar-brand active" aria-current="page" href="index.html">DLif3</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -77,82 +92,38 @@
     </header>
 
     <main>
-        <div id="div-1" class="container-fluid">
-            <h2 style="text-align: center;">Welcome to DLif3!</h2>
-            <p style="text-align: center;">A repository for my thoughts and art</p>
+        <!-- Hero Intro Section -->
+        <div id="div-1" class="container fluid py-4">
+            <h2 class="text-center fw-bold display-5">Welcome to DLif3!</h2>
+            <p class="text-center text-secondary fs-5">A repository for my thoughts and art</p>
         </div>
-        <br>
 
-        <!-- <div id="card-container1" class="container-fluid d-flex justify-content-around">
-            <div class="card" style="width: 18rem;">
-                <img src="audio-visual/sunset1.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Sunset</h5>
-                    <p class="card-text">Taken at Old Baldy Park on July 25, 2025</p>
-                    <a href="images.html" class="btn btn-primary" target="_blank">See More</a>
+        <!-- Main Featured Highlight Card (Expanded for Desktop) -->
+        <div id="card-container2" class="container my-5" style="max-width: 1100px;">
+            <div class="card overflow-hidden shadow">
+                <div class="row g-0 align-items-stretch">
+
+                    <!-- Left Side: Prominent Image Window -->
+                    <div class="col-12 col-md-5">
+                        <img src="audio-visual/sunset1.jpg" class="img-fluid w-100 object-fit-cover featured-hero-img"
+                            alt="Sunset at Old Baldy">
+                    </div>
+
+                    <!-- Right Side: Clean Typography Context with Extra Padding -->
+                    <div class="col-12 col-md-7 d-flex align-items-center">
+                        <div class="card-body p-4 p-lg-5">
+                            <h6 class="text-muted small text-uppercase fw-bold mb-2 tracking-wider">July 25, 2025</h6>
+                            <h3 class="h2 mb-3 fw-bold">Old Baldy Sunset</h3>
+                            <p class="card-text text-secondary fs-5 mb-2">Enjoyed a stunning golden hour view while
+                                hiking trails at Old Baldy Park.</p>
+                            <p class="card-text text-muted mb-4"><i class="bi bi-geo-alt"></i> Wimberley, Texas</p>
+                            <a href="images.html" class="btn btn-outline-dark px-4 py-2 fw-semibold">See more</a>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-
-            <div class="card" style="width: 18rem;">
-                <img src="audio-visual/clouds1.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Clouds</h5>
-                    <p class="card-text">A picture of clouds</p>
-                    <a href="images.html" class="btn btn-primary" target="_blank">See More</a>
-                </div>
-            </div>
-
-            <div class="card" style="width: 18rem;">
-                <img src="audio-visual/creek1.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Creek</h5>
-                    <p class="card-text">A picture of a creek</p>
-                    <a href="images.html" class="btn btn-primary" target="_blank">See More</a>
-                </div>
-            </div>
-
-            <div class="card" style="width: 18rem;">
-                <img src="audio-visual/sunrise1.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Sunrise</h5>
-                    <p class="card-text">A picture of the sunrise</p>
-                    <a href="images.html" class="btn btn-primary" target="_blank">See More</a>
-                </div>
-            </div>
-
-            <div class="card" style="width: 18rem;">
-                <img src="audio-visual/sunset2.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Sunset</h5>
-                    <p class="card-text">The Golden Hour</p>
-                    <a href="images.html" class="btn btn-primary" target="_blank">See More</a>
-                </div>
-            </div>
-        </div> -->
-        <!-- end card container1 -->
-
-        <div id="card-container2" class="container-fluid">
-            <div class="card mb-3">
-                <img src="audio-visual/sunset1.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">July 25, 2025</h5>
-                    <p class="card-text">Enjoyed a sunset while hiking at Old Baldy</p>
-                    <p class="card-text">Wimberly, Texas</p>
-                     <a href="images.html" class="header-login-link">See more</a>
-                </div>
-            </div>
-            <!-- <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                         <a href="images.html" class="header-login-link">See more</a>
-                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                </div>
-                <img src="audio-visual/sunset2.jpg" class="card-img-bottom" alt="...">
-            </div> -->
         </div><!-- end card container2 -->
-
 
     </main>
 
